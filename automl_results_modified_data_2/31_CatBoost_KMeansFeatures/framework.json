@@ -1,0 +1,121 @@
+{
+    "uid": "b267fafa-e3e7-43a4-b0c9-5f51dd5960e5",
+    "name": "31_CatBoost_KMeansFeatures",
+    "preprocessing": [
+        {
+            "kmeans": {
+                "new_features": [
+                    "Dist_Cluster_0",
+                    "Dist_Cluster_1",
+                    "Dist_Cluster_2",
+                    "Dist_Cluster_3",
+                    "Dist_Cluster_4",
+                    "Dist_Cluster_5",
+                    "Dist_Cluster_6",
+                    "Dist_Cluster_7",
+                    "Cluster"
+                ],
+                "result_file": "31_CatBoost_KMeansFeatures\\kmeans_fold_0.joblib",
+                "input_columns": [
+                    "curvature",
+                    "scaled_speed_limit",
+                    "curvature_speed_product",
+                    "scaled_num_lanes",
+                    "lanes_speed_product",
+                    "low_visibility_weight",
+                    "curvature_speed_to_low_visibility_product_scaled",
+                    "num_reported_accidents_scaled"
+                ]
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {},
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "regression",
+                "kmeans_features": {
+                    "results_path": "automl_results_modified_data_2"
+                }
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.2.8",
+            "algorithm_name": "CatBoost",
+            "algorithm_short_name": "CatBoost",
+            "uid": "bc14e0d8-3f72-44e3-bc26-57c192582be9",
+            "params": {
+                "model_type": "CatBoost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 1243,
+                "learning_rate": 0.025,
+                "depth": 7,
+                "rsm": 0.7,
+                "loss_function": "RMSE",
+                "eval_metric": "RMSE",
+                "explain_level": 0
+            },
+            "name": "learner_fold_0",
+            "best_ntree_limit": 2642
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_rounds": 10000,
+            "early_stopping_rounds": 50,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {},
+            "target_preprocessing": [
+                "na_exclude"
+            ],
+            "ml_task": "regression",
+            "kmeans_features": {
+                "results_path": "automl_results_modified_data_2"
+            }
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.8,
+            "shuffle": true,
+            "X_path": "automl_results_modified_data_2\\X.data",
+            "y_path": "automl_results_modified_data_2\\y.data",
+            "results_path": "automl_results_modified_data_2"
+        },
+        "learner": {
+            "model_type": "CatBoost",
+            "ml_task": "regression",
+            "n_jobs": -1,
+            "seed": 1243,
+            "learning_rate": 0.025,
+            "depth": 7,
+            "rsm": 0.7,
+            "loss_function": "RMSE",
+            "eval_metric": "RMSE",
+            "explain_level": 0
+        },
+        "automl_random_state": 1234,
+        "ml_task": "regression",
+        "explain_level": 0,
+        "name": "31_CatBoost_KMeansFeatures",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original_kmeans_features",
+        "max_time_for_learner": 540.0
+    },
+    "saved": [
+        "31_CatBoost_KMeansFeatures\\learner_fold_0.catboost"
+    ],
+    "predictions_fname": "31_CatBoost_KMeansFeatures\\predictions_validation.csv",
+    "metric_name": "rmse",
+    "final_loss": "0.056086047766619185",
+    "train_time": 285.51995754241943,
+    "is_stacked": false,
+    "joblib_version": "1.3.2"
+}

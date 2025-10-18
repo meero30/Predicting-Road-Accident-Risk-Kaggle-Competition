@@ -1,0 +1,77 @@
+{
+    "new_features": [
+        {
+            "feature1": "curvature_speed_to_low_visibility_product_scaled",
+            "feature2": "low_visibility_weight",
+            "operation": "sum",
+            "score": 0.0084293574
+        },
+        {
+            "feature1": "low_visibility_weight",
+            "feature2": "curvature_speed_product",
+            "operation": "sum",
+            "score": 0.0106153752
+        },
+        {
+            "feature1": "curvature_speed_to_low_visibility_product_scaled",
+            "feature2": "low_visibility_weight",
+            "operation": "multiply",
+            "score": 0.010673638
+        },
+        {
+            "feature1": "low_visibility_weight",
+            "feature2": "curvature_speed_product",
+            "operation": "multiply",
+            "score": 0.0121151445
+        },
+        {
+            "feature1": "curvature_speed_to_low_visibility_product_scaled",
+            "feature2": "curvature",
+            "operation": "multiply",
+            "score": 0.0133091798
+        },
+        {
+            "feature1": "curvature_speed_to_low_visibility_product_scaled",
+            "feature2": "scaled_speed_limit",
+            "operation": "multiply",
+            "score": 0.0135773291
+        },
+        {
+            "feature1": "curvature_speed_to_low_visibility_product_scaled",
+            "feature2": "curvature_speed_product",
+            "operation": "multiply",
+            "score": 0.0136597223
+        },
+        {
+            "feature1": "curvature_speed_to_low_visibility_product_scaled",
+            "feature2": "curvature_speed_product",
+            "operation": "sum",
+            "score": 0.0139569526
+        },
+        {
+            "feature1": "curvature_speed_to_low_visibility_product_scaled",
+            "feature2": "curvature",
+            "operation": "sum",
+            "score": 0.0142028826
+        },
+        {
+            "feature1": "low_visibility_weight",
+            "feature2": "curvature",
+            "operation": "multiply",
+            "score": 0.0142136012
+        }
+    ],
+    "new_columns": [
+        "curvature_speed_to_low_visibility_product_scaled_sum_low_visibility_weight",
+        "low_visibility_weight_sum_curvature_speed_product",
+        "curvature_speed_to_low_visibility_product_scaled_multiply_low_visibility_weight",
+        "low_visibility_weight_multiply_curvature_speed_product",
+        "curvature_speed_to_low_visibility_product_scaled_multiply_curvature",
+        "curvature_speed_to_low_visibility_product_scaled_multiply_scaled_speed_limit",
+        "curvature_speed_to_low_visibility_product_scaled_multiply_curvature_speed_product",
+        "curvature_speed_to_low_visibility_product_scaled_sum_curvature_speed_product",
+        "curvature_speed_to_low_visibility_product_scaled_sum_curvature",
+        "low_visibility_weight_multiply_curvature"
+    ],
+    "ml_task": "regression"
+}

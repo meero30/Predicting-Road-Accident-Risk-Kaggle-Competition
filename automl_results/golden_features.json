@@ -1,0 +1,77 @@
+{
+    "new_features": [
+        {
+            "feature1": "speed_limit",
+            "feature2": "curvature",
+            "operation": "multiply",
+            "score": 0.0151933705
+        },
+        {
+            "feature1": "speed_limit",
+            "feature2": "curvature",
+            "operation": "sum",
+            "score": 0.0163196747
+        },
+        {
+            "feature1": "curvature",
+            "feature2": "speed_limit",
+            "operation": "diff",
+            "score": 0.017874207
+        },
+        {
+            "feature1": "speed_limit",
+            "feature2": "num_reported_accidents",
+            "operation": "diff",
+            "score": 0.0196837466
+        },
+        {
+            "feature1": "num_reported_accidents",
+            "feature2": "speed_limit",
+            "operation": "sum",
+            "score": 0.0198030175
+        },
+        {
+            "feature1": "num_reported_accidents",
+            "feature2": "curvature",
+            "operation": "multiply",
+            "score": 0.0207550019
+        },
+        {
+            "feature1": "num_reported_accidents",
+            "feature2": "speed_limit",
+            "operation": "multiply",
+            "score": 0.0209455572
+        },
+        {
+            "feature1": "num_lanes",
+            "feature2": "speed_limit",
+            "operation": "diff",
+            "score": 0.0210668003
+        },
+        {
+            "feature1": "speed_limit",
+            "feature2": "num_lanes",
+            "operation": "sum",
+            "score": 0.0211423106
+        },
+        {
+            "feature1": "num_reported_accidents",
+            "feature2": "curvature",
+            "operation": "sum",
+            "score": 0.0215867045
+        }
+    ],
+    "new_columns": [
+        "speed_limit_multiply_curvature",
+        "speed_limit_sum_curvature",
+        "curvature_diff_speed_limit",
+        "speed_limit_diff_num_reported_accidents",
+        "num_reported_accidents_sum_speed_limit",
+        "num_reported_accidents_multiply_curvature",
+        "num_reported_accidents_multiply_speed_limit",
+        "num_lanes_diff_speed_limit",
+        "speed_limit_sum_num_lanes",
+        "num_reported_accidents_sum_curvature"
+    ],
+    "ml_task": "regression"
+}

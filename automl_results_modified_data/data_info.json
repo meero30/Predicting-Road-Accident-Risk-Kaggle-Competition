@@ -1,0 +1,69 @@
+{
+    "columns": [
+        "road_type",
+        "curvature",
+        "lighting",
+        "weather",
+        "road_signs_present",
+        "public_road",
+        "time_of_day",
+        "holiday",
+        "school_season",
+        "scaled_speed_limit",
+        "curvature_speed_product",
+        "scaled_num_lanes",
+        "lanes_speed_product",
+        "low_visibility_weight",
+        "curvature_speed_to_low_visibility_product_scaled",
+        "num_reported_accidents_scaled"
+    ],
+    "rows": 517754,
+    "cols": 16,
+    "target_is_numeric": true,
+    "columns_info": {
+        "road_type": [
+            "categorical",
+            "few_categories"
+        ],
+        "curvature": [],
+        "lighting": [
+            "categorical",
+            "few_categories"
+        ],
+        "weather": [
+            "categorical",
+            "few_categories"
+        ],
+        "road_signs_present": [
+            "categorical",
+            "few_categories"
+        ],
+        "public_road": [
+            "categorical",
+            "few_categories"
+        ],
+        "time_of_day": [
+            "categorical",
+            "few_categories"
+        ],
+        "holiday": [
+            "categorical",
+            "few_categories"
+        ],
+        "school_season": [
+            "categorical",
+            "few_categories"
+        ],
+        "scaled_speed_limit": [],
+        "curvature_speed_product": [],
+        "scaled_num_lanes": [],
+        "lanes_speed_product": [],
+        "low_visibility_weight": [],
+        "curvature_speed_to_low_visibility_product_scaled": [],
+        "num_reported_accidents_scaled": []
+    },
+    "target_info": [],
+    "n_features": 16,
+    "is_sample_weighted": false,
+    "is_fairness_applied": false
+}

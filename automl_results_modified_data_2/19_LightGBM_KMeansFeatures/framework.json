@@ -1,0 +1,229 @@
+{
+    "uid": "241f44fb-6a5f-42f7-9ce8-7c96885b0b76",
+    "name": "19_LightGBM_KMeansFeatures",
+    "preprocessing": [
+        {
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "road_type": {
+                            "highway": 0,
+                            "rural": 1,
+                            "urban": 2
+                        },
+                        "lighting": {
+                            "daylight": 0,
+                            "dim": 1,
+                            "night": 2
+                        },
+                        "weather": {
+                            "clear": 0,
+                            "foggy": 1,
+                            "rainy": 2
+                        },
+                        "road_signs_present": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "public_road": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "time_of_day": {
+                            "afternoon": 0,
+                            "evening": 1,
+                            "morning": 2
+                        },
+                        "holiday": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "school_season": {
+                            "False": 0,
+                            "True": 1
+                        }
+                    },
+                    "columns": [
+                        "road_type",
+                        "lighting",
+                        "weather",
+                        "road_signs_present",
+                        "public_road",
+                        "time_of_day",
+                        "holiday",
+                        "school_season"
+                    ]
+                }
+            ],
+            "kmeans": {
+                "new_features": [
+                    "Dist_Cluster_0",
+                    "Dist_Cluster_1",
+                    "Dist_Cluster_2",
+                    "Dist_Cluster_3",
+                    "Dist_Cluster_4",
+                    "Dist_Cluster_5",
+                    "Dist_Cluster_6",
+                    "Dist_Cluster_7",
+                    "Cluster"
+                ],
+                "result_file": "19_LightGBM_KMeansFeatures\\kmeans_fold_0.joblib",
+                "input_columns": [
+                    "curvature",
+                    "scaled_speed_limit",
+                    "curvature_speed_product",
+                    "scaled_num_lanes",
+                    "lanes_speed_product",
+                    "low_visibility_weight",
+                    "curvature_speed_to_low_visibility_product_scaled",
+                    "num_reported_accidents_scaled"
+                ]
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "road_type": [
+                        "categorical_to_int"
+                    ],
+                    "lighting": [
+                        "categorical_to_int"
+                    ],
+                    "weather": [
+                        "categorical_to_int"
+                    ],
+                    "road_signs_present": [
+                        "categorical_to_int"
+                    ],
+                    "public_road": [
+                        "categorical_to_int"
+                    ],
+                    "time_of_day": [
+                        "categorical_to_int"
+                    ],
+                    "holiday": [
+                        "categorical_to_int"
+                    ],
+                    "school_season": [
+                        "categorical_to_int"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "regression",
+                "kmeans_features": {
+                    "results_path": "automl_results_modified_data_2"
+                }
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "4.6.0",
+            "algorithm_name": "LightGBM",
+            "algorithm_short_name": "LightGBM",
+            "uid": "24974ac9-d57c-493a-8158-1755d35dba84",
+            "params": {
+                "model_type": "LightGBM",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 1240,
+                "objective": "regression",
+                "num_leaves": 127,
+                "learning_rate": 0.05,
+                "feature_fraction": 0.5,
+                "bagging_fraction": 0.5,
+                "min_data_in_leaf": 20,
+                "metric": "rmse",
+                "custom_eval_metric_name": null,
+                "explain_level": 0
+            },
+            "name": "learner_fold_0"
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_rounds": 10000,
+            "early_stopping_rounds": 50,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "road_type": [
+                    "categorical_to_int"
+                ],
+                "lighting": [
+                    "categorical_to_int"
+                ],
+                "weather": [
+                    "categorical_to_int"
+                ],
+                "road_signs_present": [
+                    "categorical_to_int"
+                ],
+                "public_road": [
+                    "categorical_to_int"
+                ],
+                "time_of_day": [
+                    "categorical_to_int"
+                ],
+                "holiday": [
+                    "categorical_to_int"
+                ],
+                "school_season": [
+                    "categorical_to_int"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude"
+            ],
+            "ml_task": "regression",
+            "kmeans_features": {
+                "results_path": "automl_results_modified_data_2"
+            }
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.8,
+            "shuffle": true,
+            "X_path": "automl_results_modified_data_2\\X.data",
+            "y_path": "automl_results_modified_data_2\\y.data",
+            "results_path": "automl_results_modified_data_2"
+        },
+        "learner": {
+            "model_type": "LightGBM",
+            "ml_task": "regression",
+            "n_jobs": -1,
+            "seed": 1240,
+            "objective": "regression",
+            "num_leaves": 127,
+            "learning_rate": 0.05,
+            "feature_fraction": 0.5,
+            "bagging_fraction": 0.5,
+            "min_data_in_leaf": 20,
+            "metric": "rmse",
+            "custom_eval_metric_name": null,
+            "explain_level": 0
+        },
+        "automl_random_state": 1234,
+        "ml_task": "regression",
+        "explain_level": 0,
+        "name": "19_LightGBM_KMeansFeatures",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original_kmeans_features",
+        "max_time_for_learner": 540.0
+    },
+    "saved": [
+        "19_LightGBM_KMeansFeatures\\learner_fold_0.lightgbm"
+    ],
+    "predictions_fname": "19_LightGBM_KMeansFeatures\\predictions_validation.csv",
+    "metric_name": "rmse",
+    "final_loss": "0.05617686562029972",
+    "train_time": 8.329244136810303,
+    "is_stacked": false,
+    "joblib_version": "1.3.2"
+}

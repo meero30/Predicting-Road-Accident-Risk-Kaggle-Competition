@@ -1,0 +1,67 @@
+{
+    "columns": [
+        "road_type",
+        "num_lanes",
+        "curvature",
+        "speed_limit",
+        "lighting",
+        "weather",
+        "road_signs_present",
+        "public_road",
+        "time_of_day",
+        "holiday",
+        "school_season",
+        "num_reported_accidents"
+    ],
+    "rows": 517754,
+    "cols": 12,
+    "target_is_numeric": true,
+    "columns_info": {
+        "road_type": [
+            "categorical",
+            "few_categories"
+        ],
+        "num_lanes": [
+            "scale"
+        ],
+        "curvature": [],
+        "speed_limit": [
+            "scale"
+        ],
+        "lighting": [
+            "categorical",
+            "few_categories"
+        ],
+        "weather": [
+            "categorical",
+            "few_categories"
+        ],
+        "road_signs_present": [
+            "categorical",
+            "few_categories"
+        ],
+        "public_road": [
+            "categorical",
+            "few_categories"
+        ],
+        "time_of_day": [
+            "categorical",
+            "few_categories"
+        ],
+        "holiday": [
+            "categorical",
+            "few_categories"
+        ],
+        "school_season": [
+            "categorical",
+            "few_categories"
+        ],
+        "num_reported_accidents": [
+            "scale"
+        ]
+    },
+    "target_info": [],
+    "n_features": 12,
+    "is_sample_weighted": false,
+    "is_fairness_applied": false
+}

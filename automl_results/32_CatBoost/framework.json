@@ -1,0 +1,91 @@
+{
+    "uid": "f96dc174-2036-43cc-a3d4-c40a1829d755",
+    "name": "32_CatBoost",
+    "preprocessing": [
+        {
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {},
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "regression"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.2.8",
+            "algorithm_name": "CatBoost",
+            "algorithm_short_name": "CatBoost",
+            "uid": "a7535302-e6c3-442c-8c25-61080153f89d",
+            "params": {
+                "model_type": "CatBoost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 1239,
+                "learning_rate": 0.1,
+                "depth": 6,
+                "rsm": 0.7,
+                "loss_function": "MAE",
+                "eval_metric": "RMSE",
+                "explain_level": 0
+            },
+            "name": "learner_fold_0",
+            "best_ntree_limit": 1788
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_rounds": 10000,
+            "early_stopping_rounds": 50,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {},
+            "target_preprocessing": [
+                "na_exclude"
+            ],
+            "ml_task": "regression"
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.8,
+            "shuffle": true,
+            "X_path": "automl_results\\X.data",
+            "y_path": "automl_results\\y.data",
+            "results_path": "automl_results"
+        },
+        "learner": {
+            "model_type": "CatBoost",
+            "ml_task": "regression",
+            "n_jobs": -1,
+            "seed": 1239,
+            "learning_rate": 0.1,
+            "depth": 6,
+            "rsm": 0.7,
+            "loss_function": "MAE",
+            "eval_metric": "RMSE",
+            "explain_level": 0
+        },
+        "automl_random_state": 1234,
+        "ml_task": "regression",
+        "explain_level": 0,
+        "name": "32_CatBoost",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 180.0
+    },
+    "saved": [
+        "32_CatBoost\\learner_fold_0.catboost"
+    ],
+    "predictions_fname": "32_CatBoost\\predictions_validation.csv",
+    "metric_name": "rmse",
+    "final_loss": "0.05625318850059587",
+    "train_time": 154.35086822509766,
+    "is_stacked": false,
+    "joblib_version": "1.3.2"
+}

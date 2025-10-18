@@ -1,0 +1,197 @@
+{
+    "uid": "1d24804e-3ddd-4ee6-9ea4-8adf0845e1bf",
+    "name": "14_Xgboost",
+    "preprocessing": [
+        {
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "road_type": {
+                            "highway": 0,
+                            "rural": 1,
+                            "urban": 2
+                        },
+                        "lighting": {
+                            "daylight": 0,
+                            "dim": 1,
+                            "night": 2
+                        },
+                        "weather": {
+                            "clear": 0,
+                            "foggy": 1,
+                            "rainy": 2
+                        },
+                        "road_signs_present": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "public_road": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "time_of_day": {
+                            "afternoon": 0,
+                            "evening": 1,
+                            "morning": 2
+                        },
+                        "holiday": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "school_season": {
+                            "False": 0,
+                            "True": 1
+                        }
+                    },
+                    "columns": [
+                        "road_type",
+                        "lighting",
+                        "weather",
+                        "road_signs_present",
+                        "public_road",
+                        "time_of_day",
+                        "holiday",
+                        "school_season"
+                    ]
+                }
+            ],
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "road_type": [
+                        "categorical_to_int"
+                    ],
+                    "lighting": [
+                        "categorical_to_int"
+                    ],
+                    "weather": [
+                        "categorical_to_int"
+                    ],
+                    "road_signs_present": [
+                        "categorical_to_int"
+                    ],
+                    "public_road": [
+                        "categorical_to_int"
+                    ],
+                    "time_of_day": [
+                        "categorical_to_int"
+                    ],
+                    "holiday": [
+                        "categorical_to_int"
+                    ],
+                    "school_season": [
+                        "categorical_to_int"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "regression"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "3.0.5",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "e27685d8-6386-4a5f-b3cb-bd07c3d154e1",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 1239,
+                "objective": "reg:squarederror",
+                "eta": 0.1,
+                "max_depth": 6,
+                "min_child_weight": 50,
+                "subsample": 0.9,
+                "colsample_bytree": 0.7,
+                "eval_metric": "rmse",
+                "explain_level": 0
+            },
+            "name": "learner_fold_0"
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_rounds": 10000,
+            "early_stopping_rounds": 50,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "road_type": [
+                    "categorical_to_int"
+                ],
+                "lighting": [
+                    "categorical_to_int"
+                ],
+                "weather": [
+                    "categorical_to_int"
+                ],
+                "road_signs_present": [
+                    "categorical_to_int"
+                ],
+                "public_road": [
+                    "categorical_to_int"
+                ],
+                "time_of_day": [
+                    "categorical_to_int"
+                ],
+                "holiday": [
+                    "categorical_to_int"
+                ],
+                "school_season": [
+                    "categorical_to_int"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude"
+            ],
+            "ml_task": "regression"
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.8,
+            "shuffle": true,
+            "X_path": "automl_results\\X.data",
+            "y_path": "automl_results\\y.data",
+            "results_path": "automl_results"
+        },
+        "learner": {
+            "model_type": "Xgboost",
+            "ml_task": "regression",
+            "n_jobs": -1,
+            "seed": 1239,
+            "objective": "reg:squarederror",
+            "eta": 0.1,
+            "max_depth": 6,
+            "min_child_weight": 50,
+            "subsample": 0.9,
+            "colsample_bytree": 0.7,
+            "eval_metric": "rmse",
+            "explain_level": 0
+        },
+        "automl_random_state": 1234,
+        "ml_task": "regression",
+        "explain_level": 0,
+        "name": "14_Xgboost",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 180.0
+    },
+    "saved": [
+        "14_Xgboost\\learner_fold_0.xgboost.json"
+    ],
+    "predictions_fname": "14_Xgboost\\predictions_validation.csv",
+    "metric_name": "rmse",
+    "final_loss": "0.05600943463681559",
+    "train_time": 3.930070400238037,
+    "is_stacked": false,
+    "joblib_version": "1.3.2"
+}

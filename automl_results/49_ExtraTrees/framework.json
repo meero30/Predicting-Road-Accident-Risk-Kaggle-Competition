@@ -1,0 +1,194 @@
+{
+    "uid": "e80e63b7-2e47-463a-a22f-6f2c3da990bd",
+    "name": "49_ExtraTrees",
+    "preprocessing": [
+        {
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "road_type": {
+                            "highway": 0,
+                            "rural": 1,
+                            "urban": 2
+                        },
+                        "lighting": {
+                            "daylight": 0,
+                            "dim": 1,
+                            "night": 2
+                        },
+                        "weather": {
+                            "clear": 0,
+                            "foggy": 1,
+                            "rainy": 2
+                        },
+                        "road_signs_present": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "public_road": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "time_of_day": {
+                            "afternoon": 0,
+                            "evening": 1,
+                            "morning": 2
+                        },
+                        "holiday": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "school_season": {
+                            "False": 0,
+                            "True": 1
+                        }
+                    },
+                    "columns": [
+                        "road_type",
+                        "lighting",
+                        "weather",
+                        "road_signs_present",
+                        "public_road",
+                        "time_of_day",
+                        "holiday",
+                        "school_season"
+                    ]
+                }
+            ],
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "road_type": [
+                        "categorical_to_int"
+                    ],
+                    "lighting": [
+                        "categorical_to_int"
+                    ],
+                    "weather": [
+                        "categorical_to_int"
+                    ],
+                    "road_signs_present": [
+                        "categorical_to_int"
+                    ],
+                    "public_road": [
+                        "categorical_to_int"
+                    ],
+                    "time_of_day": [
+                        "categorical_to_int"
+                    ],
+                    "holiday": [
+                        "categorical_to_int"
+                    ],
+                    "school_season": [
+                        "categorical_to_int"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "regression"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.7.2",
+            "algorithm_name": "Extra Trees Regressor",
+            "algorithm_short_name": "Extra Trees",
+            "uid": "91068190-779a-4c4c-9a03-488afabb6951",
+            "params": {
+                "model_type": "Extra Trees",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 1238,
+                "criterion": "squared_error",
+                "max_features": 0.6,
+                "min_samples_split": 50,
+                "max_depth": 6,
+                "eval_metric_name": "rmse",
+                "explain_level": 0
+            },
+            "name": "learner_fold_0"
+        }
+    ],
+    "params": {
+        "additional": {
+            "trees_in_step": 100,
+            "max_steps": 50,
+            "early_stopping_rounds": 50,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "road_type": [
+                    "categorical_to_int"
+                ],
+                "lighting": [
+                    "categorical_to_int"
+                ],
+                "weather": [
+                    "categorical_to_int"
+                ],
+                "road_signs_present": [
+                    "categorical_to_int"
+                ],
+                "public_road": [
+                    "categorical_to_int"
+                ],
+                "time_of_day": [
+                    "categorical_to_int"
+                ],
+                "holiday": [
+                    "categorical_to_int"
+                ],
+                "school_season": [
+                    "categorical_to_int"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude"
+            ],
+            "ml_task": "regression"
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.8,
+            "shuffle": true,
+            "X_path": "automl_results\\X.data",
+            "y_path": "automl_results\\y.data",
+            "results_path": "automl_results"
+        },
+        "learner": {
+            "model_type": "Extra Trees",
+            "ml_task": "regression",
+            "n_jobs": -1,
+            "seed": 1238,
+            "criterion": "squared_error",
+            "max_features": 0.6,
+            "min_samples_split": 50,
+            "max_depth": 6,
+            "eval_metric_name": "rmse",
+            "explain_level": 0
+        },
+        "automl_random_state": 1234,
+        "ml_task": "regression",
+        "explain_level": 0,
+        "name": "49_ExtraTrees",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 180.0
+    },
+    "saved": [
+        "49_ExtraTrees\\learner_fold_0.extra_trees"
+    ],
+    "predictions_fname": "49_ExtraTrees\\predictions_validation.csv",
+    "metric_name": "rmse",
+    "final_loss": "0.0667608578430699",
+    "train_time": 29.80043315887451,
+    "is_stacked": false,
+    "joblib_version": "1.3.2"
+}

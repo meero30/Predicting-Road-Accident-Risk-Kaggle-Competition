@@ -1,0 +1,250 @@
+{
+    "uid": "79bd59be-7294-4ace-8d8f-dd8d35cefbfc",
+    "name": "32_NeuralNetwork",
+    "preprocessing": [
+        {
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "road_type": {
+                            "highway": 0,
+                            "rural": 1,
+                            "urban": 2
+                        },
+                        "lighting": {
+                            "daylight": 0,
+                            "dim": 1,
+                            "night": 2
+                        },
+                        "weather": {
+                            "clear": 0,
+                            "foggy": 1,
+                            "rainy": 2
+                        },
+                        "road_signs_present": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "public_road": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "time_of_day": {
+                            "afternoon": 0,
+                            "evening": 1,
+                            "morning": 2
+                        },
+                        "holiday": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "school_season": {
+                            "False": 0,
+                            "True": 1
+                        }
+                    },
+                    "columns": [
+                        "road_type",
+                        "lighting",
+                        "weather",
+                        "road_signs_present",
+                        "public_road",
+                        "time_of_day",
+                        "holiday",
+                        "school_season"
+                    ]
+                }
+            ],
+            "scale": [
+                {
+                    "scale": [
+                        0.8161796190337235,
+                        0.8015533655600982,
+                        0.8048772209226825,
+                        0.49999969299953523,
+                        0.4999944647197924,
+                        0.8161809561162596,
+                        0.49998988236141834,
+                        0.49999394170228983
+                    ],
+                    "mean": [
+                        0.9948431083309391,
+                        0.9570065885568187,
+                        0.9563837055743198,
+                        0.4994459238585911,
+                        0.5023527111102527,
+                        1.003512770308279,
+                        0.5031808074784586,
+                        0.49753864650907886
+                    ],
+                    "var": [
+                        0.666149170526034,
+                        0.6424877978407204,
+                        0.6478273407602206,
+                        0.24999969299962949,
+                        0.24999446475043174,
+                        0.6661513531268518,
+                        0.24998988246378495,
+                        0.24999394173899278
+                    ],
+                    "n_samples_seen": 414203,
+                    "n_features_in": 8,
+                    "columns": [
+                        "road_type",
+                        "lighting",
+                        "weather",
+                        "road_signs_present",
+                        "public_road",
+                        "time_of_day",
+                        "holiday",
+                        "school_season"
+                    ],
+                    "scale_method": "scale_normal"
+                }
+            ],
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "road_type": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "lighting": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "weather": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "road_signs_present": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "public_road": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "time_of_day": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "holiday": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "school_season": [
+                        "categorical_to_int",
+                        "scale_normal"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "regression"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.7.2",
+            "algorithm_name": "Neural Network",
+            "algorithm_short_name": "Neural Network",
+            "uid": "c5595ed3-125b-4cde-97e6-870e58f5daa2",
+            "params": {
+                "model_type": "Neural Network",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 1235,
+                "dense_1_size": 32,
+                "dense_2_size": 4,
+                "learning_rate": 0.05,
+                "explain_level": 0
+            },
+            "name": "learner_fold_0"
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "road_type": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "lighting": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "weather": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "road_signs_present": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "public_road": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "time_of_day": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "holiday": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "school_season": [
+                    "categorical_to_int",
+                    "scale_normal"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude"
+            ],
+            "ml_task": "regression"
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.8,
+            "shuffle": true,
+            "X_path": "automl_results_modified_data_2\\X.data",
+            "y_path": "automl_results_modified_data_2\\y.data",
+            "results_path": "automl_results_modified_data_2"
+        },
+        "learner": {
+            "model_type": "Neural Network",
+            "ml_task": "regression",
+            "n_jobs": -1,
+            "seed": 1235,
+            "dense_1_size": 32,
+            "dense_2_size": 4,
+            "learning_rate": 0.05,
+            "explain_level": 0
+        },
+        "automl_random_state": 1234,
+        "ml_task": "regression",
+        "explain_level": 0,
+        "name": "32_NeuralNetwork",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 540.0
+    },
+    "saved": [
+        "32_NeuralNetwork\\learner_fold_0.neural_network"
+    ],
+    "predictions_fname": "32_NeuralNetwork\\predictions_validation.csv",
+    "metric_name": "rmse",
+    "final_loss": "0.061255990943534615",
+    "train_time": 7.57995080947876,
+    "is_stacked": false,
+    "joblib_version": "1.3.2"
+}

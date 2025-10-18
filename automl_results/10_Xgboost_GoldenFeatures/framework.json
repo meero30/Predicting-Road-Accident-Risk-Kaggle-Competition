@@ -1,0 +1,284 @@
+{
+    "uid": "e47b0f7f-c438-47a5-a49a-dd3eb5f06804",
+    "name": "10_Xgboost_GoldenFeatures",
+    "preprocessing": [
+        {
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "road_type": {
+                            "highway": 0,
+                            "rural": 1,
+                            "urban": 2
+                        },
+                        "lighting": {
+                            "daylight": 0,
+                            "dim": 1,
+                            "night": 2
+                        },
+                        "weather": {
+                            "clear": 0,
+                            "foggy": 1,
+                            "rainy": 2
+                        },
+                        "road_signs_present": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "public_road": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "time_of_day": {
+                            "afternoon": 0,
+                            "evening": 1,
+                            "morning": 2
+                        },
+                        "holiday": {
+                            "False": 0,
+                            "True": 1
+                        },
+                        "school_season": {
+                            "False": 0,
+                            "True": 1
+                        }
+                    },
+                    "columns": [
+                        "road_type",
+                        "lighting",
+                        "weather",
+                        "road_signs_present",
+                        "public_road",
+                        "time_of_day",
+                        "holiday",
+                        "school_season"
+                    ]
+                }
+            ],
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "speed_limit",
+                        "feature2": "curvature",
+                        "operation": "multiply",
+                        "score": 0.0151933705
+                    },
+                    {
+                        "feature1": "speed_limit",
+                        "feature2": "curvature",
+                        "operation": "sum",
+                        "score": 0.0163196747
+                    },
+                    {
+                        "feature1": "curvature",
+                        "feature2": "speed_limit",
+                        "operation": "diff",
+                        "score": 0.017874207
+                    },
+                    {
+                        "feature1": "speed_limit",
+                        "feature2": "num_reported_accidents",
+                        "operation": "diff",
+                        "score": 0.0196837466
+                    },
+                    {
+                        "feature1": "num_reported_accidents",
+                        "feature2": "speed_limit",
+                        "operation": "sum",
+                        "score": 0.0198030175
+                    },
+                    {
+                        "feature1": "num_reported_accidents",
+                        "feature2": "curvature",
+                        "operation": "multiply",
+                        "score": 0.0207550019
+                    },
+                    {
+                        "feature1": "num_reported_accidents",
+                        "feature2": "speed_limit",
+                        "operation": "multiply",
+                        "score": 0.0209455572
+                    },
+                    {
+                        "feature1": "num_lanes",
+                        "feature2": "speed_limit",
+                        "operation": "diff",
+                        "score": 0.0210668003
+                    },
+                    {
+                        "feature1": "speed_limit",
+                        "feature2": "num_lanes",
+                        "operation": "sum",
+                        "score": 0.0211423106
+                    },
+                    {
+                        "feature1": "num_reported_accidents",
+                        "feature2": "curvature",
+                        "operation": "sum",
+                        "score": 0.0215867045
+                    }
+                ],
+                "new_columns": [
+                    "speed_limit_multiply_curvature",
+                    "speed_limit_sum_curvature",
+                    "curvature_diff_speed_limit",
+                    "speed_limit_diff_num_reported_accidents",
+                    "num_reported_accidents_sum_speed_limit",
+                    "num_reported_accidents_multiply_curvature",
+                    "num_reported_accidents_multiply_speed_limit",
+                    "num_lanes_diff_speed_limit",
+                    "speed_limit_sum_num_lanes",
+                    "num_reported_accidents_sum_curvature"
+                ],
+                "ml_task": "regression"
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "road_type": [
+                        "categorical_to_int"
+                    ],
+                    "lighting": [
+                        "categorical_to_int"
+                    ],
+                    "weather": [
+                        "categorical_to_int"
+                    ],
+                    "road_signs_present": [
+                        "categorical_to_int"
+                    ],
+                    "public_road": [
+                        "categorical_to_int"
+                    ],
+                    "time_of_day": [
+                        "categorical_to_int"
+                    ],
+                    "holiday": [
+                        "categorical_to_int"
+                    ],
+                    "school_season": [
+                        "categorical_to_int"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "regression",
+                "golden_features": {
+                    "results_path": "automl_results",
+                    "ml_task": "regression",
+                    "n_jobs": -1
+                }
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "3.0.5",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "aa32f0de-76a4-4d4e-bde8-f81f64820387",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 1235,
+                "objective": "reg:squarederror",
+                "eta": 0.075,
+                "max_depth": 8,
+                "min_child_weight": 5,
+                "subsample": 1.0,
+                "colsample_bytree": 1.0,
+                "eval_metric": "rmse",
+                "explain_level": 0
+            },
+            "name": "learner_fold_0"
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_rounds": 10000,
+            "early_stopping_rounds": 50,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "road_type": [
+                    "categorical_to_int"
+                ],
+                "lighting": [
+                    "categorical_to_int"
+                ],
+                "weather": [
+                    "categorical_to_int"
+                ],
+                "road_signs_present": [
+                    "categorical_to_int"
+                ],
+                "public_road": [
+                    "categorical_to_int"
+                ],
+                "time_of_day": [
+                    "categorical_to_int"
+                ],
+                "holiday": [
+                    "categorical_to_int"
+                ],
+                "school_season": [
+                    "categorical_to_int"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude"
+            ],
+            "ml_task": "regression",
+            "golden_features": {
+                "results_path": "automl_results",
+                "ml_task": "regression",
+                "n_jobs": -1
+            }
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.8,
+            "shuffle": true,
+            "X_path": "automl_results\\X.data",
+            "y_path": "automl_results\\y.data",
+            "results_path": "automl_results"
+        },
+        "learner": {
+            "model_type": "Xgboost",
+            "ml_task": "regression",
+            "n_jobs": -1,
+            "seed": 1235,
+            "objective": "reg:squarederror",
+            "eta": 0.075,
+            "max_depth": 8,
+            "min_child_weight": 5,
+            "subsample": 1.0,
+            "colsample_bytree": 1.0,
+            "eval_metric": "rmse",
+            "explain_level": 0
+        },
+        "automl_random_state": 1234,
+        "ml_task": "regression",
+        "explain_level": 0,
+        "name": "10_Xgboost_GoldenFeatures",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original_golden_features",
+        "max_time_for_learner": 180.0
+    },
+    "saved": [
+        "10_Xgboost_GoldenFeatures\\learner_fold_0.xgboost.json"
+    ],
+    "predictions_fname": "10_Xgboost_GoldenFeatures\\predictions_validation.csv",
+    "metric_name": "rmse",
+    "final_loss": "0.05603930307953141",
+    "train_time": 6.836533546447754,
+    "is_stacked": false,
+    "joblib_version": "1.3.2"
+}

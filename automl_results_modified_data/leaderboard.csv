@@ -1,0 +1,38 @@
+name,model_type,metric_type,metric_value,train_time
+1_Default_LightGBM,LightGBM,rmse,0.05599683817796758,5.56
+2_Default_Xgboost,Xgboost,rmse,0.05604718553798662,4.7
+3_Default_CatBoost,CatBoost,rmse,0.05600459113494922,104.66
+4_Default_NeuralNetwork,Neural Network,rmse,0.05937485214655901,14.33
+14_LightGBM,LightGBM,rmse,0.05601010809246862,9.05
+5_Xgboost,Xgboost,rmse,0.056012067702242985,4.51
+23_CatBoost,CatBoost,rmse,0.05599585395035317,156.99
+32_NeuralNetwork,Neural Network,rmse,0.061255990943534615,7.73
+15_LightGBM,LightGBM,rmse,0.05613694252914754,4.03
+6_Xgboost,Xgboost,rmse,0.05606165570615194,3.96
+24_CatBoost,CatBoost,rmse,0.05624207060984575,70.22
+33_NeuralNetwork,Neural Network,rmse,0.05743078230697849,13.63
+16_LightGBM,LightGBM,rmse,0.05601488025498346,5.39
+7_Xgboost,Xgboost,rmse,0.05604758107415627,4.98
+25_CatBoost,CatBoost,rmse,0.05597667229759324,106.25
+34_NeuralNetwork,Neural Network,rmse,0.06126212770451294,14.75
+17_LightGBM,LightGBM,rmse,0.05600746439434595,4.67
+8_Xgboost,Xgboost,rmse,0.056142973062722874,4.05
+26_CatBoost,CatBoost,rmse,0.05624797961111343,47.93
+35_NeuralNetwork,Neural Network,rmse,0.05944941884388134,8.73
+18_LightGBM,LightGBM,rmse,0.056115553665403536,4.11
+9_Xgboost,Xgboost,rmse,0.05602530942071827,5.93
+27_CatBoost,CatBoost,rmse,0.05623831812455501,115.22
+36_NeuralNetwork,Neural Network,rmse,0.05725090675904499,13.84
+19_LightGBM,LightGBM,rmse,0.05599434384515373,5.48
+10_Xgboost,Xgboost,rmse,0.05608507494128253,7.63
+28_CatBoost,CatBoost,rmse,0.05634499707438071,136.8
+37_NeuralNetwork,Neural Network,rmse,0.058212804087529164,13.21
+20_LightGBM,LightGBM,rmse,0.056022921086365814,5.38
+11_Xgboost,Xgboost,rmse,0.056016374072665145,4.88
+29_CatBoost,CatBoost,rmse,0.05624103260756865,209.8
+38_NeuralNetwork,Neural Network,rmse,0.05748753916695518,12.26
+21_LightGBM,LightGBM,rmse,0.056086752054340556,4.36
+12_Xgboost,Xgboost,rmse,0.056021301312839916,4.18
+30_CatBoost,CatBoost,rmse,0.05622611497479419,115.92
+25_CatBoost_GoldenFeatures,CatBoost,rmse,0.056013939361662046,2230.13
+Ensemble,Ensemble,rmse,0.0559264294555146,1.42

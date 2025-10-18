@@ -1,0 +1,3040 @@
+{
+    "fit_level": "finished",
+    "time_controller": {
+        "total_time_limit": 1800,
+        "model_time_limit": null,
+        "steps": [
+            "simple_algorithms",
+            "default_algorithms",
+            "not_so_random",
+            "mix_encoding",
+            "golden_features",
+            "kmeans_features",
+            "hill_climbing_1",
+            "hill_climbing_2",
+            "ensemble"
+        ],
+        "algorithms": [
+            "Xgboost",
+            "LightGBM",
+            "CatBoost",
+            "Neural Network"
+        ],
+        "spend": [
+            {
+                "model_name": "prepare_data",
+                "model_type": "prepare_data",
+                "fit_level": "prepare_data",
+                "train_time": 2.5992722511291504
+            },
+            {
+                "model_name": "1_Default_LightGBM",
+                "model_type": "LightGBM",
+                "fit_level": "default_algorithms",
+                "train_time": 5.2908666133880615
+            },
+            {
+                "model_name": "2_Default_Xgboost",
+                "model_type": "Xgboost",
+                "fit_level": "default_algorithms",
+                "train_time": 4.450863361358643
+            },
+            {
+                "model_name": "3_Default_CatBoost",
+                "model_type": "CatBoost",
+                "fit_level": "default_algorithms",
+                "train_time": 104.39087510108948
+            },
+            {
+                "model_name": "4_Default_NeuralNetwork",
+                "model_type": "Neural Network",
+                "fit_level": "default_algorithms",
+                "train_time": 14.07588005065918
+            },
+            {
+                "model_name": "14_LightGBM",
+                "model_type": "LightGBM",
+                "fit_level": "not_so_random",
+                "train_time": 8.783735990524292
+            },
+            {
+                "model_name": "5_Xgboost",
+                "model_type": "Xgboost",
+                "fit_level": "not_so_random",
+                "train_time": 4.269834995269775
+            },
+            {
+                "model_name": "23_CatBoost",
+                "model_type": "CatBoost",
+                "fit_level": "not_so_random",
+                "train_time": 156.7126247882843
+            },
+            {
+                "model_name": "32_NeuralNetwork",
+                "model_type": "Neural Network",
+                "fit_level": "not_so_random",
+                "train_time": 7.466564893722534
+            },
+            {
+                "model_name": "15_LightGBM",
+                "model_type": "LightGBM",
+                "fit_level": "not_so_random",
+                "train_time": 3.770890474319458
+            },
+            {
+                "model_name": "6_Xgboost",
+                "model_type": "Xgboost",
+                "fit_level": "not_so_random",
+                "train_time": 3.714191198348999
+            },
+            {
+                "model_name": "24_CatBoost",
+                "model_type": "CatBoost",
+                "fit_level": "not_so_random",
+                "train_time": 69.95288562774658
+            },
+            {
+                "model_name": "33_NeuralNetwork",
+                "model_type": "Neural Network",
+                "fit_level": "not_so_random",
+                "train_time": 13.378472328186035
+            },
+            {
+                "model_name": "16_LightGBM",
+                "model_type": "LightGBM",
+                "fit_level": "not_so_random",
+                "train_time": 5.13123631477356
+            },
+            {
+                "model_name": "7_Xgboost",
+                "model_type": "Xgboost",
+                "fit_level": "not_so_random",
+                "train_time": 4.743133306503296
+            },
+            {
+                "model_name": "25_CatBoost",
+                "model_type": "CatBoost",
+                "fit_level": "not_so_random",
+                "train_time": 105.98392510414124
+            },
+            {
+                "model_name": "34_NeuralNetwork",
+                "model_type": "Neural Network",
+                "fit_level": "not_so_random",
+                "train_time": 14.477550745010376
+            },
+            {
+                "model_name": "17_LightGBM",
+                "model_type": "LightGBM",
+                "fit_level": "not_so_random",
+                "train_time": 4.407236099243164
+            },
+            {
+                "model_name": "8_Xgboost",
+                "model_type": "Xgboost",
+                "fit_level": "not_so_random",
+                "train_time": 3.8055002689361572
+            },
+            {
+                "model_name": "26_CatBoost",
+                "model_type": "CatBoost",
+                "fit_level": "not_so_random",
+                "train_time": 47.65527105331421
+            },
+            {
+                "model_name": "35_NeuralNetwork",
+                "model_type": "Neural Network",
+                "fit_level": "not_so_random",
+                "train_time": 8.468505859375
+            },
+            {
+                "model_name": "18_LightGBM",
+                "model_type": "LightGBM",
+                "fit_level": "not_so_random",
+                "train_time": 3.8525984287261963
+            },
+            {
+                "model_name": "9_Xgboost",
+                "model_type": "Xgboost",
+                "fit_level": "not_so_random",
+                "train_time": 5.685756683349609
+            },
+            {
+                "model_name": "27_CatBoost",
+                "model_type": "CatBoost",
+                "fit_level": "not_so_random",
+                "train_time": 114.95158338546753
+            },
+            {
+                "model_name": "36_NeuralNetwork",
+                "model_type": "Neural Network",
+                "fit_level": "not_so_random",
+                "train_time": 13.585150480270386
+            },
+            {
+                "model_name": "19_LightGBM",
+                "model_type": "LightGBM",
+                "fit_level": "not_so_random",
+                "train_time": 5.2214131355285645
+            },
+            {
+                "model_name": "10_Xgboost",
+                "model_type": "Xgboost",
+                "fit_level": "not_so_random",
+                "train_time": 7.384381532669067
+            },
+            {
+                "model_name": "28_CatBoost",
+                "model_type": "CatBoost",
+                "fit_level": "not_so_random",
+                "train_time": 136.5280785560608
+            },
+            {
+                "model_name": "37_NeuralNetwork",
+                "model_type": "Neural Network",
+                "fit_level": "not_so_random",
+                "train_time": 12.943291425704956
+            },
+            {
+                "model_name": "20_LightGBM",
+                "model_type": "LightGBM",
+                "fit_level": "not_so_random",
+                "train_time": 5.117233514785767
+            },
+            {
+                "model_name": "11_Xgboost",
+                "model_type": "Xgboost",
+                "fit_level": "not_so_random",
+                "train_time": 4.635947227478027
+            },
+            {
+                "model_name": "29_CatBoost",
+                "model_type": "CatBoost",
+                "fit_level": "not_so_random",
+                "train_time": 209.52191734313965
+            },
+            {
+                "model_name": "38_NeuralNetwork",
+                "model_type": "Neural Network",
+                "fit_level": "not_so_random",
+                "train_time": 11.997472524642944
+            },
+            {
+                "model_name": "21_LightGBM",
+                "model_type": "LightGBM",
+                "fit_level": "not_so_random",
+                "train_time": 4.099393129348755
+            },
+            {
+                "model_name": "12_Xgboost",
+                "model_type": "Xgboost",
+                "fit_level": "not_so_random",
+                "train_time": 3.9400196075439453
+            },
+            {
+                "model_name": "30_CatBoost",
+                "model_type": "CatBoost",
+                "fit_level": "not_so_random",
+                "train_time": 115.65611147880554
+            },
+            {
+                "model_name": "25_CatBoost_GoldenFeatures",
+                "model_type": "CatBoost",
+                "fit_level": "golden_features",
+                "train_time": 2229.8645482063293
+            },
+            {
+                "model_name": "Ensemble",
+                "model_type": "Ensemble",
+                "fit_level": "ensemble",
+                "train_time": 1.4217371940612793
+            }
+        ],
+        "is_hill_climbing": true,
+        "is_stacking": false
+    },
+    "all_params": {
+        "default_algorithms": [
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "road_type": [
+                            "categorical_to_int"
+                        ],
+                        "lighting": [
+                            "categorical_to_int"
+                        ],
+                        "weather": [
+                            "categorical_to_int"
+                        ],
+                        "road_signs_present": [
+                            "categorical_to_int"
+                        ],
+                        "public_road": [
+                            "categorical_to_int"
+                        ],
+                        "time_of_day": [
+                            "categorical_to_int"
+                        ],
+                        "holiday": [
+                            "categorical_to_int"
+                        ],
+                        "school_season": [
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.8,
+                    "shuffle": true,
+                    "X_path": "automl_results_modified_data\\X.data",
+                    "y_path": "automl_results_modified_data\\y.data",
+                    "results_path": "automl_results_modified_data"
+                },
+                "learner": {
+                    "model_type": "LightGBM",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "objective": "regression",
+                    "num_leaves": 63,
+                    "learning_rate": 0.05,
+                    "feature_fraction": 0.9,
+                    "bagging_fraction": 0.9,
+                    "min_data_in_leaf": 10,
+                    "seed": 1,
+                    "metric": "rmse",
+                    "custom_eval_metric_name": null,
+                    "explain_level": 0
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "1_Default_LightGBM",
+                "status": "trained",
+                "final_loss": 0.05599683817796758,
+                "train_time": 5.56147575378418,
+                "data_type": "original",
+                "max_time_for_learner": 180.0
+            },
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "road_type": [
+                            "categorical_to_int"
+                        ],
+                        "lighting": [
+                            "categorical_to_int"
+                        ],
+                        "weather": [
+                            "categorical_to_int"
+                        ],
+                        "road_signs_present": [
+                            "categorical_to_int"
+                        ],
+                        "public_road": [
+                            "categorical_to_int"
+                        ],
+                        "time_of_day": [
+                            "categorical_to_int"
+                        ],
+                        "holiday": [
+                            "categorical_to_int"
+                        ],
+                        "school_season": [
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.8,
+                    "shuffle": true,
+                    "X_path": "automl_results_modified_data\\X.data",
+                    "y_path": "automl_results_modified_data\\y.data",
+                    "results_path": "automl_results_modified_data"
+                },
+                "learner": {
+                    "model_type": "Xgboost",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "objective": "reg:squarederror",
+                    "eta": 0.075,
+                    "max_depth": 6,
+                    "min_child_weight": 1,
+                    "subsample": 1.0,
+                    "colsample_bytree": 1.0,
+                    "seed": 2,
+                    "eval_metric": "rmse",
+                    "explain_level": 0
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "2_Default_Xgboost",
+                "status": "trained",
+                "final_loss": 0.05604718553798662,
+                "train_time": 4.701373815536499,
+                "data_type": "original",
+                "max_time_for_learner": 180.0
+            },
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {},
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.8,
+                    "shuffle": true,
+                    "X_path": "automl_results_modified_data\\X.data",
+                    "y_path": "automl_results_modified_data\\y.data",
+                    "results_path": "automl_results_modified_data"
+                },
+                "learner": {
+                    "model_type": "CatBoost",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "learning_rate": 0.1,
+                    "depth": 6,
+                    "rsm": 1,
+                    "loss_function": "RMSE",
+                    "seed": 3,
+                    "eval_metric": "RMSE",
+                    "explain_level": 0
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "3_Default_CatBoost",
+                "status": "trained",
+                "final_loss": 0.05600459113494922,
+                "train_time": 104.6610004901886,
+                "data_type": "original",
+                "max_time_for_learner": 180.0
+            },
+            {
+                "additional": {
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "road_type": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "lighting": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "weather": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "road_signs_present": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "public_road": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "time_of_day": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "holiday": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "school_season": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.8,
+                    "shuffle": true,
+                    "X_path": "automl_results_modified_data\\X.data",
+                    "y_path": "automl_results_modified_data\\y.data",
+                    "results_path": "automl_results_modified_data"
+                },
+                "learner": {
+                    "model_type": "Neural Network",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "dense_1_size": 32,
+                    "dense_2_size": 16,
+                    "learning_rate": 0.05,
+                    "seed": 4,
+                    "explain_level": 0
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "4_Default_NeuralNetwork",
+                "status": "trained",
+                "final_loss": 0.05937485214655901,
+                "train_time": 14.334126949310303,
+                "data_type": "original",
+                "max_time_for_learner": 180.0
+            }
+        ],
+        "not_so_random": [
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "road_type": [
+                            "categorical_to_int"
+                        ],
+                        "lighting": [
+                            "categorical_to_int"
+                        ],
+                        "weather": [
+                            "categorical_to_int"
+                        ],
+                        "road_signs_present": [
+                            "categorical_to_int"
+                        ],
+                        "public_road": [
+                            "categorical_to_int"
+                        ],
+                        "time_of_day": [
+                            "categorical_to_int"
+                        ],
+                        "holiday": [
+                            "categorical_to_int"
+                        ],
+                        "school_season": [
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.8,
+                    "shuffle": true,
+                    "X_path": "automl_results_modified_data\\X.data",
+                    "y_path": "automl_results_modified_data\\y.data",
+                    "results_path": "automl_results_modified_data"
+                },
+                "learner": {
+                    "model_type": "LightGBM",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1235,
+                    "objective": "regression",
+                    "num_leaves": 15,
+                    "learning_rate": 0.05,
+                    "feature_fraction": 0.8,
+                    "bagging_fraction": 0.5,
+                    "min_data_in_leaf": 50,
+                    "metric": "rmse",
+                    "custom_eval_metric_name": null,
+                    "explain_level": 0
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "14_LightGBM",
+                "status": "trained",
+                "final_loss": 0.05601010809246862,
+                "train_time": 9.053133010864258,
+                "data_type": "original",
+                "max_time_for_learner": 180.0
+            },
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "road_type": [
+                            "categorical_to_int"
+                        ],
+                        "lighting": [
+                            "categorical_to_int"
+                        ],
+                        "weather": [
+                            "categorical_to_int"
+                        ],
+                        "road_signs_present": [
+                            "categorical_to_int"
+                        ],
+                        "public_road": [
+                            "categorical_to_int"
+                        ],
+                        "time_of_day": [
+                            "categorical_to_int"
+                        ],
+                        "holiday": [
+                            "categorical_to_int"
+                        ],
+                        "school_season": [
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.8,
+                    "shuffle": true,
+                    "X_path": "automl_results_modified_data\\X.data",
+                    "y_path": "automl_results_modified_data\\y.data",
+                    "results_path": "automl_results_modified_data"
+                },
+                "learner": {
+                    "model_type": "Xgboost",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1235,
+                    "objective": "reg:squarederror",
+                    "eta": 0.075,
+                    "max_depth": 8,
+                    "min_child_weight": 5,
+                    "subsample": 1.0,
+                    "colsample_bytree": 1.0,
+                    "eval_metric": "rmse",
+                    "explain_level": 0
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "5_Xgboost",
+                "status": "trained",
+                "final_loss": 0.056012067702242985,
+                "train_time": 4.512840032577515,
+                "data_type": "original",
+                "max_time_for_learner": 180.0
+            },
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {},
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.8,
+                    "shuffle": true,
+                    "X_path": "automl_results_modified_data\\X.data",
+                    "y_path": "automl_results_modified_data\\y.data",
+                    "results_path": "automl_results_modified_data"
+                },
+                "learner": {
+                    "model_type": "CatBoost",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1235,
+                    "learning_rate": 0.05,
+                    "depth": 8,
+                    "rsm": 0.8,
+                    "loss_function": "RMSE",
+                    "eval_metric": "RMSE",
+                    "explain_level": 0
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "23_CatBoost",
+                "status": "trained",
+                "final_loss": 0.05599585395035317,
+                "train_time": 156.99322509765625,
+                "data_type": "original",
+                "max_time_for_learner": 180.0
+            },
+            {
+                "additional": {
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "road_type": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "lighting": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "weather": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "road_signs_present": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "public_road": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "time_of_day": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "holiday": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "school_season": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.8,
+                    "shuffle": true,
+                    "X_path": "automl_results_modified_data\\X.data",
+                    "y_path": "automl_results_modified_data\\y.data",
+                    "results_path": "automl_results_modified_data"
+                },
+                "learner": {
+                    "model_type": "Neural Network",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1235,
+                    "dense_1_size": 32,
+                    "dense_2_size": 4,
+                    "learning_rate": 0.05,
+                    "explain_level": 0
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "32_NeuralNetwork",
+                "status": "trained",
+                "final_loss": 0.061255990943534615,
+                "train_time": 7.730115652084351,
+                "data_type": "original",
+                "max_time_for_learner": 180.0
+            },
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "road_type": [
+                            "categorical_to_int"
+                        ],
+                        "lighting": [
+                            "categorical_to_int"
+                        ],
+                        "weather": [
+                            "categorical_to_int"
+                        ],
+                        "road_signs_present": [
+                            "categorical_to_int"
+                        ],
+                        "public_road": [
+                            "categorical_to_int"
+                        ],
+                        "time_of_day": [
+                            "categorical_to_int"
+                        ],
+                        "holiday": [
+                            "categorical_to_int"
+                        ],
+                        "school_season": [
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.8,
+                    "shuffle": true,
+                    "X_path": "automl_results_modified_data\\X.data",
+                    "y_path": "automl_results_modified_data\\y.data",
+                    "results_path": "automl_results_modified_data"
+                },
+                "learner": {
+                    "model_type": "LightGBM",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1236,
+                    "objective": "regression",
+                    "num_leaves": 63,
+                    "learning_rate": 0.2,
+                    "feature_fraction": 0.5,
+                    "bagging_fraction": 1.0,
+                    "min_data_in_leaf": 10,
+                    "metric": "rmse",
+                    "custom_eval_metric_name": null,
+                    "explain_level": 0
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "15_LightGBM",
+                "status": "trained",
+                "final_loss": 0.05613694252914754,
+                "train_time": 4.032611131668091,
+                "data_type": "original",
+                "max_time_for_learner": 180.0
+            },
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "road_type": [
+                            "categorical_to_int"
+                        ],
+                        "lighting": [
+                            "categorical_to_int"
+                        ],
+                        "weather": [
+                            "categorical_to_int"
+                        ],
+                        "road_signs_present": [
+                            "categorical_to_int"
+                        ],
+                        "public_road": [
+                            "categorical_to_int"
+                        ],
+                        "time_of_day": [
+                            "categorical_to_int"
+                        ],
+                        "holiday": [
+                            "categorical_to_int"
+                        ],
+                        "school_season": [
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.8,
+                    "shuffle": true,
+                    "X_path": "automl_results_modified_data\\X.data",
+                    "y_path": "automl_results_modified_data\\y.data",
+                    "results_path": "automl_results_modified_data"
+                },
+                "learner": {
+                    "model_type": "Xgboost",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1236,
+                    "objective": "reg:squarederror",
+                    "eta": 0.1,
+                    "max_depth": 8,
+                    "min_child_weight": 1,
+                    "subsample": 1.0,
+                    "colsample_bytree": 1.0,
+                    "eval_metric": "rmse",
+                    "explain_level": 0
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "6_Xgboost",
+                "status": "trained",
+                "final_loss": 0.05606165570615194,
+                "train_time": 3.961146593093872,
+                "data_type": "original",
+                "max_time_for_learner": 180.0
+            },
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {},
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.8,
+                    "shuffle": true,
+                    "X_path": "automl_results_modified_data\\X.data",
+                    "y_path": "automl_results_modified_data\\y.data",
+                    "results_path": "automl_results_modified_data"
+                },
+                "learner": {
+                    "model_type": "CatBoost",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1236,
+                    "learning_rate": 0.1,
+                    "depth": 8,
+                    "rsm": 1.0,
+                    "loss_function": "MAE",
+                    "eval_metric": "RMSE",
+                    "explain_level": 0
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "24_CatBoost",
+                "status": "trained",
+                "final_loss": 0.05624207060984575,
+                "train_time": 70.21638011932373,
+                "data_type": "original",
+                "max_time_for_learner": 180.0
+            },
+            {
+                "additional": {
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "road_type": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "lighting": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "weather": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "road_signs_present": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "public_road": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "time_of_day": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "holiday": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "school_season": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.8,
+                    "shuffle": true,
+                    "X_path": "automl_results_modified_data\\X.data",
+                    "y_path": "automl_results_modified_data\\y.data",
+                    "results_path": "automl_results_modified_data"
+                },
+                "learner": {
+                    "model_type": "Neural Network",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1236,
+                    "dense_1_size": 64,
+                    "dense_2_size": 16,
+                    "learning_rate": 0.01,
+                    "explain_level": 0
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "33_NeuralNetwork",
+                "status": "trained",
+                "final_loss": 0.05743078230697849,
+                "train_time": 13.632770538330078,
+                "data_type": "original",
+                "max_time_for_learner": 180.0
+            },
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "road_type": [
+                            "categorical_to_int"
+                        ],
+                        "lighting": [
+                            "categorical_to_int"
+                        ],
+                        "weather": [
+                            "categorical_to_int"
+                        ],
+                        "road_signs_present": [
+                            "categorical_to_int"
+                        ],
+                        "public_road": [
+                            "categorical_to_int"
+                        ],
+                        "time_of_day": [
+                            "categorical_to_int"
+                        ],
+                        "holiday": [
+                            "categorical_to_int"
+                        ],
+                        "school_season": [
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.8,
+                    "shuffle": true,
+                    "X_path": "automl_results_modified_data\\X.data",
+                    "y_path": "automl_results_modified_data\\y.data",
+                    "results_path": "automl_results_modified_data"
+                },
+                "learner": {
+                    "model_type": "LightGBM",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1237,
+                    "objective": "regression",
+                    "num_leaves": 63,
+                    "learning_rate": 0.05,
+                    "feature_fraction": 0.9,
+                    "bagging_fraction": 1.0,
+                    "min_data_in_leaf": 20,
+                    "metric": "rmse",
+                    "custom_eval_metric_name": null,
+                    "explain_level": 0
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "16_LightGBM",
+                "status": "trained",
+                "final_loss": 0.05601488025498346,
+                "train_time": 5.3944618701934814,
+                "data_type": "original",
+                "max_time_for_learner": 180.0
+            },
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "road_type": [
+                            "categorical_to_int"
+                        ],
+                        "lighting": [
+                            "categorical_to_int"
+                        ],
+                        "weather": [
+                            "categorical_to_int"
+                        ],
+                        "road_signs_present": [
+                            "categorical_to_int"
+                        ],
+                        "public_road": [
+                            "categorical_to_int"
+                        ],
+                        "time_of_day": [
+                            "categorical_to_int"
+                        ],
+                        "holiday": [
+                            "categorical_to_int"
+                        ],
+                        "school_season": [
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.8,
+                    "shuffle": true,
+                    "X_path": "automl_results_modified_data\\X.data",
+                    "y_path": "automl_results_modified_data\\y.data",
+                    "results_path": "automl_results_modified_data"
+                },
+                "learner": {
+                    "model_type": "Xgboost",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1237,
+                    "objective": "reg:squarederror",
+                    "eta": 0.1,
+                    "max_depth": 7,
+                    "min_child_weight": 25,
+                    "subsample": 0.9,
+                    "colsample_bytree": 0.6,
+                    "eval_metric": "rmse",
+                    "explain_level": 0
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "7_Xgboost",
+                "status": "trained",
+                "final_loss": 0.05604758107415627,
+                "train_time": 4.984349727630615,
+                "data_type": "original",
+                "max_time_for_learner": 180.0
+            },
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {},
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.8,
+                    "shuffle": true,
+                    "X_path": "automl_results_modified_data\\X.data",
+                    "y_path": "automl_results_modified_data\\y.data",
+                    "results_path": "automl_results_modified_data"
+                },
+                "learner": {
+                    "model_type": "CatBoost",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1237,
+                    "learning_rate": 0.1,
+                    "depth": 7,
+                    "rsm": 1.0,
+                    "loss_function": "RMSE",
+                    "eval_metric": "RMSE",
+                    "explain_level": 0
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "25_CatBoost",
+                "status": "trained",
+                "final_loss": 0.05597667229759324,
+                "train_time": 106.24823427200317,
+                "data_type": "original",
+                "max_time_for_learner": 180.0
+            },
+            {
+                "additional": {
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "road_type": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "lighting": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "weather": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "road_signs_present": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "public_road": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "time_of_day": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "holiday": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "school_season": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.8,
+                    "shuffle": true,
+                    "X_path": "automl_results_modified_data\\X.data",
+                    "y_path": "automl_results_modified_data\\y.data",
+                    "results_path": "automl_results_modified_data"
+                },
+                "learner": {
+                    "model_type": "Neural Network",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1237,
+                    "dense_1_size": 64,
+                    "dense_2_size": 32,
+                    "learning_rate": 0.08,
+                    "explain_level": 0
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "34_NeuralNetwork",
+                "status": "trained",
+                "final_loss": 0.06126212770451294,
+                "train_time": 14.746161222457886,
+                "data_type": "original",
+                "max_time_for_learner": 180.0
+            },
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "road_type": [
+                            "categorical_to_int"
+                        ],
+                        "lighting": [
+                            "categorical_to_int"
+                        ],
+                        "weather": [
+                            "categorical_to_int"
+                        ],
+                        "road_signs_present": [
+                            "categorical_to_int"
+                        ],
+                        "public_road": [
+                            "categorical_to_int"
+                        ],
+                        "time_of_day": [
+                            "categorical_to_int"
+                        ],
+                        "holiday": [
+                            "categorical_to_int"
+                        ],
+                        "school_season": [
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.8,
+                    "shuffle": true,
+                    "X_path": "automl_results_modified_data\\X.data",
+                    "y_path": "automl_results_modified_data\\y.data",
+                    "results_path": "automl_results_modified_data"
+                },
+                "learner": {
+                    "model_type": "LightGBM",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1238,
+                    "objective": "regression",
+                    "num_leaves": 95,
+                    "learning_rate": 0.05,
+                    "feature_fraction": 1.0,
+                    "bagging_fraction": 1.0,
+                    "min_data_in_leaf": 10,
+                    "metric": "rmse",
+                    "custom_eval_metric_name": null,
+                    "explain_level": 0
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "17_LightGBM",
+                "status": "trained",
+                "final_loss": 0.05600746439434595,
+                "train_time": 4.669124603271484,
+                "data_type": "original",
+                "max_time_for_learner": 180.0
+            },
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "road_type": [
+                            "categorical_to_int"
+                        ],
+                        "lighting": [
+                            "categorical_to_int"
+                        ],
+                        "weather": [
+                            "categorical_to_int"
+                        ],
+                        "road_signs_present": [
+                            "categorical_to_int"
+                        ],
+                        "public_road": [
+                            "categorical_to_int"
+                        ],
+                        "time_of_day": [
+                            "categorical_to_int"
+                        ],
+                        "holiday": [
+                            "categorical_to_int"
+                        ],
+                        "school_season": [
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.8,
+                    "shuffle": true,
+                    "X_path": "automl_results_modified_data\\X.data",
+                    "y_path": "automl_results_modified_data\\y.data",
+                    "results_path": "automl_results_modified_data"
+                },
+                "learner": {
+                    "model_type": "Xgboost",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1238,
+                    "objective": "reg:squarederror",
+                    "eta": 0.15,
+                    "max_depth": 8,
+                    "min_child_weight": 50,
+                    "subsample": 0.6,
+                    "colsample_bytree": 0.6,
+                    "eval_metric": "rmse",
+                    "explain_level": 0
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "8_Xgboost",
+                "status": "trained",
+                "final_loss": 0.056142973062722874,
+                "train_time": 4.052541494369507,
+                "data_type": "original",
+                "max_time_for_learner": 180.0
+            },
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {},
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.8,
+                    "shuffle": true,
+                    "X_path": "automl_results_modified_data\\X.data",
+                    "y_path": "automl_results_modified_data\\y.data",
+                    "results_path": "automl_results_modified_data"
+                },
+                "learner": {
+                    "model_type": "CatBoost",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1238,
+                    "learning_rate": 0.2,
+                    "depth": 8,
+                    "rsm": 1.0,
+                    "loss_function": "MAE",
+                    "eval_metric": "RMSE",
+                    "explain_level": 0
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "26_CatBoost",
+                "status": "trained",
+                "final_loss": 0.05624797961111343,
+                "train_time": 47.929845094680786,
+                "data_type": "original",
+                "max_time_for_learner": 180.0
+            },
+            {
+                "additional": {
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "road_type": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "lighting": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "weather": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "road_signs_present": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "public_road": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "time_of_day": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "holiday": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "school_season": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.8,
+                    "shuffle": true,
+                    "X_path": "automl_results_modified_data\\X.data",
+                    "y_path": "automl_results_modified_data\\y.data",
+                    "results_path": "automl_results_modified_data"
+                },
+                "learner": {
+                    "model_type": "Neural Network",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1238,
+                    "dense_1_size": 32,
+                    "dense_2_size": 32,
+                    "learning_rate": 0.05,
+                    "explain_level": 0
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "35_NeuralNetwork",
+                "status": "trained",
+                "final_loss": 0.05944941884388134,
+                "train_time": 8.728047370910645,
+                "data_type": "original",
+                "max_time_for_learner": 180.0
+            },
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "road_type": [
+                            "categorical_to_int"
+                        ],
+                        "lighting": [
+                            "categorical_to_int"
+                        ],
+                        "weather": [
+                            "categorical_to_int"
+                        ],
+                        "road_signs_present": [
+                            "categorical_to_int"
+                        ],
+                        "public_road": [
+                            "categorical_to_int"
+                        ],
+                        "time_of_day": [
+                            "categorical_to_int"
+                        ],
+                        "holiday": [
+                            "categorical_to_int"
+                        ],
+                        "school_season": [
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.8,
+                    "shuffle": true,
+                    "X_path": "automl_results_modified_data\\X.data",
+                    "y_path": "automl_results_modified_data\\y.data",
+                    "results_path": "automl_results_modified_data"
+                },
+                "learner": {
+                    "model_type": "LightGBM",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1239,
+                    "objective": "regression",
+                    "num_leaves": 63,
+                    "learning_rate": 0.2,
+                    "feature_fraction": 0.5,
+                    "bagging_fraction": 1.0,
+                    "min_data_in_leaf": 30,
+                    "metric": "rmse",
+                    "custom_eval_metric_name": null,
+                    "explain_level": 0
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "18_LightGBM",
+                "status": "trained",
+                "final_loss": 0.056115553665403536,
+                "train_time": 4.113615036010742,
+                "data_type": "original",
+                "max_time_for_learner": 180.0
+            },
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "road_type": [
+                            "categorical_to_int"
+                        ],
+                        "lighting": [
+                            "categorical_to_int"
+                        ],
+                        "weather": [
+                            "categorical_to_int"
+                        ],
+                        "road_signs_present": [
+                            "categorical_to_int"
+                        ],
+                        "public_road": [
+                            "categorical_to_int"
+                        ],
+                        "time_of_day": [
+                            "categorical_to_int"
+                        ],
+                        "holiday": [
+                            "categorical_to_int"
+                        ],
+                        "school_season": [
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.8,
+                    "shuffle": true,
+                    "X_path": "automl_results_modified_data\\X.data",
+                    "y_path": "automl_results_modified_data\\y.data",
+                    "results_path": "automl_results_modified_data"
+                },
+                "learner": {
+                    "model_type": "Xgboost",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1239,
+                    "objective": "reg:squarederror",
+                    "eta": 0.1,
+                    "max_depth": 6,
+                    "min_child_weight": 50,
+                    "subsample": 0.9,
+                    "colsample_bytree": 0.7,
+                    "eval_metric": "rmse",
+                    "explain_level": 0
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "9_Xgboost",
+                "status": "trained",
+                "final_loss": 0.05602530942071827,
+                "train_time": 5.928351879119873,
+                "data_type": "original",
+                "max_time_for_learner": 180.0
+            },
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {},
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.8,
+                    "shuffle": true,
+                    "X_path": "automl_results_modified_data\\X.data",
+                    "y_path": "automl_results_modified_data\\y.data",
+                    "results_path": "automl_results_modified_data"
+                },
+                "learner": {
+                    "model_type": "CatBoost",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1239,
+                    "learning_rate": 0.1,
+                    "depth": 6,
+                    "rsm": 0.7,
+                    "loss_function": "MAE",
+                    "eval_metric": "RMSE",
+                    "explain_level": 0
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "27_CatBoost",
+                "status": "trained",
+                "final_loss": 0.05623831812455501,
+                "train_time": 115.2202033996582,
+                "data_type": "original",
+                "max_time_for_learner": 180.0
+            },
+            {
+                "additional": {
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "road_type": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "lighting": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "weather": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "road_signs_present": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "public_road": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "time_of_day": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "holiday": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "school_season": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.8,
+                    "shuffle": true,
+                    "X_path": "automl_results_modified_data\\X.data",
+                    "y_path": "automl_results_modified_data\\y.data",
+                    "results_path": "automl_results_modified_data"
+                },
+                "learner": {
+                    "model_type": "Neural Network",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1239,
+                    "dense_1_size": 64,
+                    "dense_2_size": 16,
+                    "learning_rate": 0.01,
+                    "explain_level": 0
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "36_NeuralNetwork",
+                "status": "trained",
+                "final_loss": 0.05725090675904499,
+                "train_time": 13.839467287063599,
+                "data_type": "original",
+                "max_time_for_learner": 180.0
+            },
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "road_type": [
+                            "categorical_to_int"
+                        ],
+                        "lighting": [
+                            "categorical_to_int"
+                        ],
+                        "weather": [
+                            "categorical_to_int"
+                        ],
+                        "road_signs_present": [
+                            "categorical_to_int"
+                        ],
+                        "public_road": [
+                            "categorical_to_int"
+                        ],
+                        "time_of_day": [
+                            "categorical_to_int"
+                        ],
+                        "holiday": [
+                            "categorical_to_int"
+                        ],
+                        "school_season": [
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.8,
+                    "shuffle": true,
+                    "X_path": "automl_results_modified_data\\X.data",
+                    "y_path": "automl_results_modified_data\\y.data",
+                    "results_path": "automl_results_modified_data"
+                },
+                "learner": {
+                    "model_type": "LightGBM",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1240,
+                    "objective": "regression",
+                    "num_leaves": 127,
+                    "learning_rate": 0.05,
+                    "feature_fraction": 0.5,
+                    "bagging_fraction": 0.5,
+                    "min_data_in_leaf": 20,
+                    "metric": "rmse",
+                    "custom_eval_metric_name": null,
+                    "explain_level": 0
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "19_LightGBM",
+                "status": "trained",
+                "final_loss": 0.05599434384515373,
+                "train_time": 5.483219623565674,
+                "data_type": "original",
+                "max_time_for_learner": 180.0
+            },
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "road_type": [
+                            "categorical_to_int"
+                        ],
+                        "lighting": [
+                            "categorical_to_int"
+                        ],
+                        "weather": [
+                            "categorical_to_int"
+                        ],
+                        "road_signs_present": [
+                            "categorical_to_int"
+                        ],
+                        "public_road": [
+                            "categorical_to_int"
+                        ],
+                        "time_of_day": [
+                            "categorical_to_int"
+                        ],
+                        "holiday": [
+                            "categorical_to_int"
+                        ],
+                        "school_season": [
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.8,
+                    "shuffle": true,
+                    "X_path": "automl_results_modified_data\\X.data",
+                    "y_path": "automl_results_modified_data\\y.data",
+                    "results_path": "automl_results_modified_data"
+                },
+                "learner": {
+                    "model_type": "Xgboost",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1240,
+                    "objective": "reg:squarederror",
+                    "eta": 0.1,
+                    "max_depth": 4,
+                    "min_child_weight": 25,
+                    "subsample": 0.7,
+                    "colsample_bytree": 0.7,
+                    "eval_metric": "rmse",
+                    "explain_level": 0
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "10_Xgboost",
+                "status": "trained",
+                "final_loss": 0.05608507494128253,
+                "train_time": 7.629727363586426,
+                "data_type": "original",
+                "max_time_for_learner": 180.0
+            },
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {},
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.8,
+                    "shuffle": true,
+                    "X_path": "automl_results_modified_data\\X.data",
+                    "y_path": "automl_results_modified_data\\y.data",
+                    "results_path": "automl_results_modified_data"
+                },
+                "learner": {
+                    "model_type": "CatBoost",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1240,
+                    "learning_rate": 0.1,
+                    "depth": 4,
+                    "rsm": 0.7,
+                    "loss_function": "MAPE",
+                    "eval_metric": "RMSE",
+                    "explain_level": 0
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "28_CatBoost",
+                "status": "trained",
+                "final_loss": 0.05634499707438071,
+                "train_time": 136.79655480384827,
+                "data_type": "original",
+                "max_time_for_learner": 180.0
+            },
+            {
+                "additional": {
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "road_type": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "lighting": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "weather": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "road_signs_present": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "public_road": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "time_of_day": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "holiday": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "school_season": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.8,
+                    "shuffle": true,
+                    "X_path": "automl_results_modified_data\\X.data",
+                    "y_path": "automl_results_modified_data\\y.data",
+                    "results_path": "automl_results_modified_data"
+                },
+                "learner": {
+                    "model_type": "Neural Network",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1240,
+                    "dense_1_size": 64,
+                    "dense_2_size": 4,
+                    "learning_rate": 0.01,
+                    "explain_level": 0
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "37_NeuralNetwork",
+                "status": "trained",
+                "final_loss": 0.058212804087529164,
+                "train_time": 13.206335544586182,
+                "data_type": "original",
+                "max_time_for_learner": 180.0
+            },
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "road_type": [
+                            "categorical_to_int"
+                        ],
+                        "lighting": [
+                            "categorical_to_int"
+                        ],
+                        "weather": [
+                            "categorical_to_int"
+                        ],
+                        "road_signs_present": [
+                            "categorical_to_int"
+                        ],
+                        "public_road": [
+                            "categorical_to_int"
+                        ],
+                        "time_of_day": [
+                            "categorical_to_int"
+                        ],
+                        "holiday": [
+                            "categorical_to_int"
+                        ],
+                        "school_season": [
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.8,
+                    "shuffle": true,
+                    "X_path": "automl_results_modified_data\\X.data",
+                    "y_path": "automl_results_modified_data\\y.data",
+                    "results_path": "automl_results_modified_data"
+                },
+                "learner": {
+                    "model_type": "LightGBM",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1241,
+                    "objective": "regression",
+                    "num_leaves": 63,
+                    "learning_rate": 0.05,
+                    "feature_fraction": 0.9,
+                    "bagging_fraction": 0.8,
+                    "min_data_in_leaf": 30,
+                    "metric": "rmse",
+                    "custom_eval_metric_name": null,
+                    "explain_level": 0
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "20_LightGBM",
+                "status": "trained",
+                "final_loss": 0.056022921086365814,
+                "train_time": 5.382947206497192,
+                "data_type": "original",
+                "max_time_for_learner": 180.0
+            },
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "road_type": [
+                            "categorical_to_int"
+                        ],
+                        "lighting": [
+                            "categorical_to_int"
+                        ],
+                        "weather": [
+                            "categorical_to_int"
+                        ],
+                        "road_signs_present": [
+                            "categorical_to_int"
+                        ],
+                        "public_road": [
+                            "categorical_to_int"
+                        ],
+                        "time_of_day": [
+                            "categorical_to_int"
+                        ],
+                        "holiday": [
+                            "categorical_to_int"
+                        ],
+                        "school_season": [
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.8,
+                    "shuffle": true,
+                    "X_path": "automl_results_modified_data\\X.data",
+                    "y_path": "automl_results_modified_data\\y.data",
+                    "results_path": "automl_results_modified_data"
+                },
+                "learner": {
+                    "model_type": "Xgboost",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1241,
+                    "objective": "reg:squarederror",
+                    "eta": 0.05,
+                    "max_depth": 8,
+                    "min_child_weight": 5,
+                    "subsample": 0.5,
+                    "colsample_bytree": 0.8,
+                    "eval_metric": "rmse",
+                    "explain_level": 0
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "11_Xgboost",
+                "status": "trained",
+                "final_loss": 0.056016374072665145,
+                "train_time": 4.876493453979492,
+                "data_type": "original",
+                "max_time_for_learner": 180.0
+            },
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {},
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.8,
+                    "shuffle": true,
+                    "X_path": "automl_results_modified_data\\X.data",
+                    "y_path": "automl_results_modified_data\\y.data",
+                    "results_path": "automl_results_modified_data"
+                },
+                "learner": {
+                    "model_type": "CatBoost",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1241,
+                    "learning_rate": 0.025,
+                    "depth": 8,
+                    "rsm": 1.0,
+                    "loss_function": "MAE",
+                    "eval_metric": "RMSE",
+                    "explain_level": 0
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "29_CatBoost",
+                "status": "trained",
+                "final_loss": 0.05624103260756865,
+                "train_time": 209.79694056510925,
+                "data_type": "original",
+                "max_time_for_learner": 180.0
+            },
+            {
+                "additional": {
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "road_type": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "lighting": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "weather": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "road_signs_present": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "public_road": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "time_of_day": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "holiday": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "school_season": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.8,
+                    "shuffle": true,
+                    "X_path": "automl_results_modified_data\\X.data",
+                    "y_path": "automl_results_modified_data\\y.data",
+                    "results_path": "automl_results_modified_data"
+                },
+                "learner": {
+                    "model_type": "Neural Network",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1241,
+                    "dense_1_size": 16,
+                    "dense_2_size": 16,
+                    "learning_rate": 0.01,
+                    "explain_level": 0
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "38_NeuralNetwork",
+                "status": "trained",
+                "final_loss": 0.05748753916695518,
+                "train_time": 12.263218879699707,
+                "data_type": "original",
+                "max_time_for_learner": 180.0
+            },
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "road_type": [
+                            "categorical_to_int"
+                        ],
+                        "lighting": [
+                            "categorical_to_int"
+                        ],
+                        "weather": [
+                            "categorical_to_int"
+                        ],
+                        "road_signs_present": [
+                            "categorical_to_int"
+                        ],
+                        "public_road": [
+                            "categorical_to_int"
+                        ],
+                        "time_of_day": [
+                            "categorical_to_int"
+                        ],
+                        "holiday": [
+                            "categorical_to_int"
+                        ],
+                        "school_season": [
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.8,
+                    "shuffle": true,
+                    "X_path": "automl_results_modified_data\\X.data",
+                    "y_path": "automl_results_modified_data\\y.data",
+                    "results_path": "automl_results_modified_data"
+                },
+                "learner": {
+                    "model_type": "LightGBM",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1242,
+                    "objective": "regression",
+                    "num_leaves": 31,
+                    "learning_rate": 0.1,
+                    "feature_fraction": 0.8,
+                    "bagging_fraction": 0.8,
+                    "min_data_in_leaf": 5,
+                    "metric": "rmse",
+                    "custom_eval_metric_name": null,
+                    "explain_level": 0
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "21_LightGBM",
+                "status": "trained",
+                "final_loss": 0.056086752054340556,
+                "train_time": 4.360720872879028,
+                "data_type": "original",
+                "max_time_for_learner": 180.0
+            },
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "road_type": [
+                            "categorical_to_int"
+                        ],
+                        "lighting": [
+                            "categorical_to_int"
+                        ],
+                        "weather": [
+                            "categorical_to_int"
+                        ],
+                        "road_signs_present": [
+                            "categorical_to_int"
+                        ],
+                        "public_road": [
+                            "categorical_to_int"
+                        ],
+                        "time_of_day": [
+                            "categorical_to_int"
+                        ],
+                        "holiday": [
+                            "categorical_to_int"
+                        ],
+                        "school_season": [
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.8,
+                    "shuffle": true,
+                    "X_path": "automl_results_modified_data\\X.data",
+                    "y_path": "automl_results_modified_data\\y.data",
+                    "results_path": "automl_results_modified_data"
+                },
+                "learner": {
+                    "model_type": "Xgboost",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1242,
+                    "objective": "reg:squarederror",
+                    "eta": 0.1,
+                    "max_depth": 7,
+                    "min_child_weight": 50,
+                    "subsample": 1.0,
+                    "colsample_bytree": 1.0,
+                    "eval_metric": "rmse",
+                    "explain_level": 0
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "12_Xgboost",
+                "status": "trained",
+                "final_loss": 0.056021301312839916,
+                "train_time": 4.183003664016724,
+                "data_type": "original",
+                "max_time_for_learner": 180.0
+            },
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {},
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.8,
+                    "shuffle": true,
+                    "X_path": "automl_results_modified_data\\X.data",
+                    "y_path": "automl_results_modified_data\\y.data",
+                    "results_path": "automl_results_modified_data"
+                },
+                "learner": {
+                    "model_type": "CatBoost",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1242,
+                    "learning_rate": 0.1,
+                    "depth": 7,
+                    "rsm": 0.8,
+                    "loss_function": "MAE",
+                    "eval_metric": "RMSE",
+                    "explain_level": 0
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "30_CatBoost",
+                "status": "trained",
+                "final_loss": 0.05622611497479419,
+                "train_time": 115.92047762870789,
+                "data_type": "original",
+                "max_time_for_learner": 180.0
+            },
+            {
+                "additional": {
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "road_type": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "lighting": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "weather": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "road_signs_present": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "public_road": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "time_of_day": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "holiday": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "school_season": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.8,
+                    "shuffle": true,
+                    "X_path": "automl_results_modified_data\\X.data",
+                    "y_path": "automl_results_modified_data\\y.data",
+                    "results_path": "automl_results_modified_data"
+                },
+                "learner": {
+                    "model_type": "Neural Network",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1242,
+                    "dense_1_size": 64,
+                    "dense_2_size": 8,
+                    "learning_rate": 0.1
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "39_NeuralNetwork",
+                "status": "skipped",
+                "final_loss": 0.05622611497479419,
+                "train_time": 115.92047762870789,
+                "data_type": "original"
+            },
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "road_type": [
+                            "categorical_to_int"
+                        ],
+                        "lighting": [
+                            "categorical_to_int"
+                        ],
+                        "weather": [
+                            "categorical_to_int"
+                        ],
+                        "road_signs_present": [
+                            "categorical_to_int"
+                        ],
+                        "public_road": [
+                            "categorical_to_int"
+                        ],
+                        "time_of_day": [
+                            "categorical_to_int"
+                        ],
+                        "holiday": [
+                            "categorical_to_int"
+                        ],
+                        "school_season": [
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.8,
+                    "shuffle": true,
+                    "X_path": "automl_results_modified_data\\X.data",
+                    "y_path": "automl_results_modified_data\\y.data",
+                    "results_path": "automl_results_modified_data"
+                },
+                "learner": {
+                    "model_type": "LightGBM",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1243,
+                    "objective": "regression",
+                    "num_leaves": 15,
+                    "learning_rate": 0.05,
+                    "feature_fraction": 1.0,
+                    "bagging_fraction": 0.5,
+                    "min_data_in_leaf": 30,
+                    "metric": "rmse",
+                    "custom_eval_metric_name": null
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "22_LightGBM",
+                "status": "skipped",
+                "final_loss": 0.05622611497479419,
+                "train_time": 115.92047762870789,
+                "data_type": "original"
+            },
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "road_type": [
+                            "categorical_to_int"
+                        ],
+                        "lighting": [
+                            "categorical_to_int"
+                        ],
+                        "weather": [
+                            "categorical_to_int"
+                        ],
+                        "road_signs_present": [
+                            "categorical_to_int"
+                        ],
+                        "public_road": [
+                            "categorical_to_int"
+                        ],
+                        "time_of_day": [
+                            "categorical_to_int"
+                        ],
+                        "holiday": [
+                            "categorical_to_int"
+                        ],
+                        "school_season": [
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.8,
+                    "shuffle": true,
+                    "X_path": "automl_results_modified_data\\X.data",
+                    "y_path": "automl_results_modified_data\\y.data",
+                    "results_path": "automl_results_modified_data"
+                },
+                "learner": {
+                    "model_type": "Xgboost",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1243,
+                    "objective": "reg:squarederror",
+                    "eta": 0.05,
+                    "max_depth": 7,
+                    "min_child_weight": 1,
+                    "subsample": 0.9,
+                    "colsample_bytree": 0.9,
+                    "eval_metric": "rmse"
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "13_Xgboost",
+                "status": "skipped",
+                "final_loss": 0.05622611497479419,
+                "train_time": 115.92047762870789,
+                "data_type": "original"
+            },
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {},
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.8,
+                    "shuffle": true,
+                    "X_path": "automl_results_modified_data\\X.data",
+                    "y_path": "automl_results_modified_data\\y.data",
+                    "results_path": "automl_results_modified_data"
+                },
+                "learner": {
+                    "model_type": "CatBoost",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1243,
+                    "learning_rate": 0.025,
+                    "depth": 7,
+                    "rsm": 0.7,
+                    "loss_function": "RMSE",
+                    "eval_metric": "RMSE"
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "31_CatBoost",
+                "status": "skipped",
+                "final_loss": 0.05622611497479419,
+                "train_time": 115.92047762870789,
+                "data_type": "original"
+            },
+            {
+                "additional": {
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "road_type": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "lighting": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "weather": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "road_signs_present": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "public_road": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "time_of_day": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "holiday": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ],
+                        "school_season": [
+                            "categorical_to_int",
+                            "scale_normal"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression"
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.8,
+                    "shuffle": true,
+                    "X_path": "automl_results_modified_data\\X.data",
+                    "y_path": "automl_results_modified_data\\y.data",
+                    "results_path": "automl_results_modified_data"
+                },
+                "learner": {
+                    "model_type": "Neural Network",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1243,
+                    "dense_1_size": 16,
+                    "dense_2_size": 32,
+                    "learning_rate": 0.08
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "40_NeuralNetwork",
+                "status": "skipped",
+                "final_loss": 0.05622611497479419,
+                "train_time": 115.92047762870789,
+                "data_type": "original"
+            }
+        ],
+        "golden_features": [
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {},
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression",
+                    "golden_features": {
+                        "results_path": "automl_results_modified_data",
+                        "ml_task": "regression",
+                        "n_jobs": -1
+                    }
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.8,
+                    "shuffle": true,
+                    "X_path": "automl_results_modified_data\\X.data",
+                    "y_path": "automl_results_modified_data\\y.data",
+                    "results_path": "automl_results_modified_data"
+                },
+                "learner": {
+                    "model_type": "CatBoost",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1237,
+                    "learning_rate": 0.1,
+                    "depth": 7,
+                    "rsm": 1.0,
+                    "loss_function": "RMSE",
+                    "eval_metric": "RMSE",
+                    "explain_level": 0
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "25_CatBoost_GoldenFeatures",
+                "status": "trained",
+                "final_loss": 0.056013939361662046,
+                "train_time": 2230.1288244724274,
+                "data_type": "original_golden_features",
+                "max_time_for_learner": 180.0
+            },
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {
+                        "road_type": [
+                            "categorical_to_int"
+                        ],
+                        "lighting": [
+                            "categorical_to_int"
+                        ],
+                        "weather": [
+                            "categorical_to_int"
+                        ],
+                        "road_signs_present": [
+                            "categorical_to_int"
+                        ],
+                        "public_road": [
+                            "categorical_to_int"
+                        ],
+                        "time_of_day": [
+                            "categorical_to_int"
+                        ],
+                        "holiday": [
+                            "categorical_to_int"
+                        ],
+                        "school_season": [
+                            "categorical_to_int"
+                        ]
+                    },
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression",
+                    "golden_features": {
+                        "results_path": "automl_results_modified_data",
+                        "ml_task": "regression",
+                        "n_jobs": -1
+                    }
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.8,
+                    "shuffle": true,
+                    "X_path": "automl_results_modified_data\\X.data",
+                    "y_path": "automl_results_modified_data\\y.data",
+                    "results_path": "automl_results_modified_data"
+                },
+                "learner": {
+                    "model_type": "LightGBM",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1240,
+                    "objective": "regression",
+                    "num_leaves": 127,
+                    "learning_rate": 0.05,
+                    "feature_fraction": 0.5,
+                    "bagging_fraction": 0.5,
+                    "min_data_in_leaf": 20,
+                    "metric": "rmse",
+                    "custom_eval_metric_name": null,
+                    "explain_level": 0
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "19_LightGBM_GoldenFeatures",
+                "status": "skipped",
+                "final_loss": 0.056013939361662046,
+                "train_time": 2230.1288244724274,
+                "data_type": "original_golden_features",
+                "max_time_for_learner": 180.0
+            },
+            {
+                "additional": {
+                    "max_rounds": 10000,
+                    "early_stopping_rounds": 50,
+                    "max_rows_limit": null,
+                    "max_cols_limit": null
+                },
+                "preprocessing": {
+                    "columns_preprocessing": {},
+                    "target_preprocessing": [
+                        "na_exclude"
+                    ],
+                    "ml_task": "regression",
+                    "golden_features": {
+                        "results_path": "automl_results_modified_data",
+                        "ml_task": "regression",
+                        "n_jobs": -1
+                    }
+                },
+                "validation_strategy": {
+                    "validation_type": "split",
+                    "train_ratio": 0.8,
+                    "shuffle": true,
+                    "X_path": "automl_results_modified_data\\X.data",
+                    "y_path": "automl_results_modified_data\\y.data",
+                    "results_path": "automl_results_modified_data"
+                },
+                "learner": {
+                    "model_type": "CatBoost",
+                    "ml_task": "regression",
+                    "n_jobs": -1,
+                    "seed": 1235,
+                    "learning_rate": 0.05,
+                    "depth": 8,
+                    "rsm": 0.8,
+                    "loss_function": "RMSE",
+                    "eval_metric": "RMSE",
+                    "explain_level": 0
+                },
+                "automl_random_state": 1234,
+                "ml_task": "regression",
+                "explain_level": 0,
+                "name": "23_CatBoost_GoldenFeatures",
+                "status": "skipped",
+                "final_loss": 0.056013939361662046,
+                "train_time": 2230.1288244724274,
+                "data_type": "original_golden_features",
+                "max_time_for_learner": 180.0
+            }
+        ],
+        "ensemble": [
+            {
+                "model_type": "ensemble",
+                "is_stacked": false,
+                "name": "Ensemble",
+                "status": "trained",
+                "final_loss": 0.0559264294555146,
+                "train_time": 1.4217371940612793
+            }
+        ]
+    },
+    "adjust_validation": false
+}
